@@ -8,7 +8,7 @@ const SignUpModal = ({ closeModal }) => (
           <div className="mb-4">
             <input type="email" placeholder="Your Email" className="w-full p-3 border rounded-lg" />
           </div>
-          <button type="submit" className="bg-orange-500 hover:bg-orange-700 text-white font-bold py-2 px-4 rounded w-full">Sign Up</button>
+          <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded w-full">Sign Up</button>
         </form>
         <button onClick={closeModal} className="mt-4 text-gray-700 hover:text-gray-900">Close</button>
       </div>
