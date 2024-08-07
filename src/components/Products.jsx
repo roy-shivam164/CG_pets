@@ -1,23 +1,23 @@
-import dogimg from '../assets/2151182847.jpg';
-import catfood from '../assets/catfood.jpg';
-import birdfood from '../assets/birdfood.jpg';
+// import dogimg from '../assets/2151182847.jpg';
+// import catfood from '../assets/catfood.jpg';
+// import birdfood from '../assets/birdfood.jpg';
 
 
 const products = [
     {
       name: 'Dog Food',
       description: 'High-quality food for your beloved dogs.',
-      image: dogimg
+      image: 'images/dog_food.jpg'
     },
     {
       name: 'Cat Food',
       description: 'Nutritional food for your lovely cats.',
-      image: catfood,
+      image: 'images/cat_food.jpg',
     },
     {
       name: 'Bird Food',
       description: 'Premium food for your feathered friends.',
-      image: birdfood,
+      image: 'images/bird_food.jpg',
     },
   ];
   
