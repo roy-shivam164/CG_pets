@@ -6,19 +6,34 @@
 const products = [
     {
       name: 'Dog Food',
-      description: 'High-quality food for your beloved dogs.',
+      description: 'High-quality, nutritious options for dogs of all ages, sizes, and dietary needs to keep them healthy and happy.',
       image: 'images/dog_food.jpg'
     },
     {
       name: 'Cat Food',
-      description: 'Nutritional food for your lovely cats.',
+      description: 'Delicious and balanced meals for cats, including choices for kittens, adults, and seniors, tailored to their specific needs.',
       image: 'images/cat_food.jpg',
     },
     {
       name: 'Bird Food',
-      description: 'Premium food for your feathered friends.',
+      description: 'Varied blends and seeds to nourish and delight pet birds, supporting their health and vibrant plumage',
       image: 'images/bird_food.jpg',
     },
+    {
+      name: 'Pet Bedding & Furniture',
+      description : 'Comfortable beds, stylish furniture, and cozy crates to enhance your pet relaxation and enjoyment at home.',
+      image : 'images/pet_cage.jpg'
+    },
+    {
+      name: 'Pet Grooming Supplies',
+      description : 'Essential tools and products for keeping your pet clean, healthy, and looking their best with ease.',
+      image : 'images/pet_grooming.png'
+    },
+    {
+      name: 'Pet Accessories',
+      description : 'Collars, leashes, clothing, and travel gear designed to add style and convenience to your pet daily routine.',
+      image : 'images/pet_accessories.jpg'
+    }
   ];
   
   const Products = () => (
@@ -28,7 +43,7 @@ const products = [
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 fade-in">
           {products.map((product, index) => (
             <div key={index} className="bg-gray-100 p-6 rounded-lg shadow-lg">
-              <img src={product.image} alt={product.name} className="w-full h-64 object-cover mb-4 rounded-lg" />
+              <img src={product.image} alt={product.name} className="w-full h-96 object-cover mb-4 rounded-lg" />
               <h3 className="text-xl font-bold mb-2">{product.name}</h3>
               <p className="text-gray-700 mb-4">{product.description}</p>
               <a href="#" className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded">Buy Now</a>
